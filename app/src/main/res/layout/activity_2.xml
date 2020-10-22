@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="249dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/my_name_text"
+        android:layout_width="356dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="tanui velvine"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/country_text"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/track_name"
+        android:layout_width="332dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/asul_bold"
+        android:text="track:android"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/phone_text"
+        app:layout_constraintEnd_toEndOf="@+id/email_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_text" />
+
+    <TextView
+        android:id="@+id/country_text"
+        android:layout_width="305dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/asul_bold"
+        android:text="country_kenya"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/email_text"
+        app:layout_constraintEnd_toEndOf="@+id/my_name_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/my_name_text" />
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="325dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/asul_bold"
+        android:text="email:ngeshvelvine@gmail.com"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/track_name"
+        app:layout_constraintEnd_toEndOf="@+id/country_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/country_text" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="308dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/asul_bold"
+        android:text="phone:+254728731289"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/username_text"
+        app:layout_constraintEnd_toEndOf="@+id/track_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/track_name" />
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="295dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/asul_bold"
+        android:text="slack:tanui velvine"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phone_text"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
